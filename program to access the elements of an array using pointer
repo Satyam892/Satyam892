@@ -1,0 +1,32 @@
+//write a program to access the elements of an array using pointer//
+
+#include<iostream>
+using namespace std;
+int main()
+{
+	int arr[5];
+	
+	cout<<"Enter the number:";
+	for(int i=0;i<5;++i)
+	cin>>arr[i];
+	cout<<"You entered the number:";
+	for(int i=0;i<5;++i)
+	cout<<endl<<*(arr + i);
+	
+	return 0;
+	
+}
+
+OUTPUT:
+Enter the number:
+1
+2
+3
+5
+4
+You entered the number:
+1
+2
+3
+5
+4
